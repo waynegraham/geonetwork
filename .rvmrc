@@ -1,0 +1,5 @@
+rvm use 1.9.3@geonetwork --create
+
+git pull
+
+bundle install

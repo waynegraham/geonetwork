@@ -1,0 +1,361 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://libsvr35.lib.virginia.edu/geonetwork/srv/en/csw?acceptFormats=application/xml&acceptVersions=2.0.2&request=GetCapabilities&service=CSW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 27 Jan 2013 19:50:29 GMT
+      Set-Cookie:
+      - JSESSIONID=0384351331524F2A68DB6CD7D49492AE; Path=/geonetwork
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - '-1'
+      Content-Type:
+      - application/xml;charset=UTF-8
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<csw:Capabilities xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"
+        xmlns:gml=\"http://www.opengis.net/gml\" xmlns:gmd=\"http://www.isotc211.org/2005/gmd\"
+        xmlns:ows=\"http://www.opengis.net/ows\" xmlns:ogc=\"http://www.opengis.net/ogc\"
+        xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        version=\"2.0.2\" xsi:schemaLocation=\"http://www.opengis.net/cat/csw/2.0.2
+        http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd\">\r\n  <ows:ServiceIdentification>\r\n
+        \   <ows:Title />\r\n    <ows:Abstract />\r\n    <ows:Keywords>\r\n      <!--
+        Keywords are automatically added by GeoNetwork\n            according to catalogue
+        content. -->\r\n      <ows:Keyword>roads</ows:Keyword>\r\n      <ows:Keyword>Virginia</ows:Keyword>\r\n
+        \     <ows:Keyword>Historic</ows:Keyword>\r\n      <ows:Keyword>McGregor</ows:Keyword>\r\n
+        \     <ows:Keyword>streets</ows:Keyword>\r\n      <ows:Keyword>streams</ows:Keyword>\r\n
+        \     <ows:Keyword>rivers</ows:Keyword>\r\n      <ows:Keyword>North America</ows:Keyword>\r\n
+        \     <ows:Keyword>railroads</ows:Keyword>\r\n      <ows:Keyword>buildings</ows:Keyword>\r\n
+        \     <ows:Type>theme</ows:Type>\r\n    </ows:Keywords>\r\n    <ows:ServiceType>CSW</ows:ServiceType>\r\n
+        \   <ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>\r\n    <ows:Fees
+        />\r\n    <ows:AccessConstraints />\r\n  </ows:ServiceIdentification>\r\n
+        \ <ows:ServiceProvider>\r\n    <ows:ProviderName>GeoNetwork opensource</ows:ProviderName>\r\n
+        \   <ows:ProviderSite xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork\"
+        />\r\n    <ows:ServiceContact>\r\n      <ows:IndividualName />\r\n      <ows:PositionName
+        />\r\n      <ows:ContactInfo>\r\n        <ows:Phone>\r\n          <ows:Voice
+        />\r\n          <ows:Facsimile />\r\n        </ows:Phone>\r\n        <ows:Address>\r\n
+        \         <ows:DeliveryPoint />\r\n          <ows:City />\r\n          <ows:AdministrativeArea
+        />\r\n          <ows:PostalCode />\r\n          <ows:Country />\r\n          <ows:ElectronicMailAddress
+        />\r\n        </ows:Address>\r\n        <ows:HoursOfService />\r\n        <ows:ContactInstructions
+        />\r\n      </ows:ContactInfo>\r\n      <ows:Role />\r\n    </ows:ServiceContact>\r\n
+        \ </ows:ServiceProvider>\r\n  <ows:OperationsMetadata>\r\n    <ows:Operation
+        name=\"GetCapabilities\">\r\n      <ows:DCP>\r\n        <ows:HTTP>\r\n          <ows:Get
+        xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <ows:Parameter name=\"sections\">\r\n
+        \       <ows:Value>ServiceIdentification</ows:Value>\r\n        <ows:Value>ServiceProvider</ows:Value>\r\n
+        \       <ows:Value>OperationsMetadata</ows:Value>\r\n        <ows:Value>Filter_Capabilities</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Constraint name=\"PostEncoding\">\r\n
+        \       <ows:Value>XML</ows:Value>\r\n      </ows:Constraint>\r\n    </ows:Operation>\r\n
+        \   <ows:Operation name=\"DescribeRecord\">\r\n      <ows:DCP>\r\n        <ows:HTTP>\r\n
+        \         <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\">\r\n
+        \           <ows:Constraint name=\"PostEncoding\">\r\n              <ows:Value>XML</ows:Value>\r\n
+        \             <ows:Value>SOAP</ows:Value>\r\n            </ows:Constraint>\r\n
+        \         </ows:Post>\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <ows:Parameter
+        name=\"typeName\">\r\n        <ows:Value>csw:Record</ows:Value>\r\n        <ows:Value>gmd:MD_Metadata</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"outputFormat\">\r\n
+        \       <ows:Value>application/xml</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Parameter name=\"schemaLanguage\">\r\n        <ows:Value>http://www.w3.org/TR/xmlschema-1/</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"typeName\">\r\n        <ows:Value>csw:Record</ows:Value>\r\n
+        \       <ows:Value>gmd:MD_Metadata</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Constraint name=\"PostEncoding\">\r\n        <ows:Value>XML</ows:Value>\r\n
+        \     </ows:Constraint>\r\n    </ows:Operation>\r\n    <ows:Operation name=\"GetDomain\">\r\n
+        \     <ows:DCP>\r\n        <ows:HTTP>\r\n          <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n    </ows:Operation>\r\n
+        \   <ows:Operation name=\"GetRecords\">\r\n      <ows:DCP>\r\n        <ows:HTTP>\r\n
+        \         <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\">\r\n
+        \           <ows:Constraint name=\"PostEncoding\">\r\n              <ows:Value>XML</ows:Value>\r\n
+        \             <ows:Value>SOAP</ows:Value>\r\n            </ows:Constraint>\r\n
+        \         </ows:Post>\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <!--
+        FIXME : Gets it from enum or conf -->\r\n      <ows:Parameter name=\"resultType\">\r\n
+        \       <ows:Value>hits</ows:Value>\r\n        <ows:Value>results</ows:Value>\r\n
+        \       <ows:Value>validate</ows:Value>\r\n      </ows:Parameter>\r\n      <ows:Parameter
+        name=\"outputFormat\">\r\n        <ows:Value>application/xml</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"outputSchema\">\r\n
+        \       <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>\r\n        <ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"typeNames\">\r\n        <ows:Value>csw:Record</ows:Value>\r\n
+        \       <ows:Value>gmd:MD_Metadata</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Parameter name=\"CONSTRAINTLANGUAGE\">\r\n        <ows:Value>FILTER</ows:Value>\r\n
+        \       <ows:Value>CQL_TEXT</ows:Value>\r\n      </ows:Parameter>\r\n      <ows:Constraint
+        name=\"PostEncoding\">\r\n        <ows:Value>XML</ows:Value>\r\n      </ows:Constraint>\r\n
+        \     <ows:Constraint name=\"SupportedISOQueryables\">\r\n        <ows:Value>Operation</ows:Value>\r\n
+        \       <ows:Value>Format</ows:Value>\r\n        <ows:Value>OrganisationName</ows:Value>\r\n
+        \       <ows:Value>Type</ows:Value>\r\n        <ows:Value>ServiceType</ows:Value>\r\n
+        \       <ows:Value>DistanceValue</ows:Value>\r\n        <ows:Value>ResourceLanguage</ows:Value>\r\n
+        \       <ows:Value>RevisionDate</ows:Value>\r\n        <ows:Value>OperatesOn</ows:Value>\r\n
+        \       <ows:Value>GeographicDescriptionCode</ows:Value>\r\n        <ows:Value>AnyText</ows:Value>\r\n
+        \       <ows:Value>Modified</ows:Value>\r\n        <ows:Value>PublicationDate</ows:Value>\r\n
+        \       <ows:Value>ResourceIdentifier</ows:Value>\r\n        <ows:Value>ParentIdentifier</ows:Value>\r\n
+        \       <ows:Value>Identifier</ows:Value>\r\n        <ows:Value>CouplingType</ows:Value>\r\n
+        \       <ows:Value>TopicCategory</ows:Value>\r\n        <ows:Value>OperatesOnIdentifier</ows:Value>\r\n
+        \       <ows:Value>ServiceTypeVersion</ows:Value>\r\n        <ows:Value>TempExtent_end</ows:Value>\r\n
+        \       <ows:Value>Subject</ows:Value>\r\n        <ows:Value>CreationDate</ows:Value>\r\n
+        \       <ows:Value>OperatesOnName</ows:Value>\r\n        <ows:Value>Title</ows:Value>\r\n
+        \       <ows:Value>DistanceUOM</ows:Value>\r\n        <ows:Value>Denominator</ows:Value>\r\n
+        \       <ows:Value>AlternateTitle</ows:Value>\r\n        <ows:Value>Language</ows:Value>\r\n
+        \       <ows:Value>TempExtent_begin</ows:Value>\r\n        <ows:Value>HasSecurityConstraints</ows:Value>\r\n
+        \       <ows:Value>KeywordType</ows:Value>\r\n        <ows:Value>Abstract</ows:Value>\r\n
+        \     </ows:Constraint>\r\n      <ows:Constraint name=\"AdditionalQueryables\">\r\n
+        \       <ows:Value>AccessConstraints</ows:Value>\r\n        <ows:Value>ResponsiblePartyRole</ows:Value>\r\n
+        \       <ows:Value>OnlineResourceMimeType</ows:Value>\r\n        <ows:Value>OnlineResourceType</ows:Value>\r\n
+        \       <ows:Value>Lineage</ows:Value>\r\n        <ows:Value>SpecificationDate</ows:Value>\r\n
+        \       <ows:Value>ConditionApplyingToAccessAndUse</ows:Value>\r\n        <ows:Value>SpecificationDateType</ows:Value>\r\n
+        \       <ows:Value>MetadataPointOfContact</ows:Value>\r\n        <ows:Value>Classification</ows:Value>\r\n
+        \       <ows:Value>OtherConstraints</ows:Value>\r\n        <ows:Value>Degree</ows:Value>\r\n
+        \       <ows:Value>SpecificationTitle</ows:Value>\r\n      </ows:Constraint>\r\n
+        \   </ows:Operation>\r\n    <ows:Operation name=\"GetRecordById\">\r\n      <ows:DCP>\r\n
+        \       <ows:HTTP>\r\n          <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\">\r\n
+        \           <ows:Constraint name=\"PostEncoding\">\r\n              <ows:Value>XML</ows:Value>\r\n
+        \             <ows:Value>SOAP</ows:Value>\r\n            </ows:Constraint>\r\n
+        \         </ows:Post>\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <ows:Parameter
+        name=\"outputSchema\">\r\n        <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>\r\n
+        \       <ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Parameter name=\"outputFormat\">\r\n        <ows:Value>application/xml</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"resultType\">\r\n        <ows:Value>hits</ows:Value>\r\n
+        \       <ows:Value>results</ows:Value>\r\n        <ows:Value>validate</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"ElementSetName\">\r\n
+        \       <ows:Value>brief</ows:Value>\r\n        <ows:Value>summary</ows:Value>\r\n
+        \       <ows:Value>full</ows:Value>\r\n      </ows:Parameter>\r\n      <ows:Constraint
+        name=\"PostEncoding\">\r\n        <ows:Value>XML</ows:Value>\r\n      </ows:Constraint>\r\n
+        \   </ows:Operation>\r\n    <ows:Operation name=\"Transaction\">\r\n      <ows:DCP>\r\n
+        \       <ows:HTTP>\r\n          <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n    </ows:Operation>\r\n
+        \   <!--\t\t\n\t\t<ows:Operation name=\"Harvest\">\n\t\t\t<ows:DCP>\n\t\t\t\t<ows:HTTP>\n\t\t\t\t\t<ows:Get
+        \ xlink:href=\"http://$HOST:$PORT$SERVLET/srv/en/csw\" />\n\t\t\t\t\t<ows:Post
+        xlink:href=\"http://$HOST:$PORT$SERVLET/srv/en/csw\"  />\n\t\t\t\t</ows:HTTP>\n\t\t\t</ows:DCP>\n\t\t</ows:Operation>\n-->\r\n
+        \   <ows:Parameter name=\"service\">\r\n      <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>\r\n
+        \   </ows:Parameter>\r\n    <ows:Parameter name=\"version\">\r\n      <ows:Value>2.0.2</ows:Value>\r\n
+        \   </ows:Parameter>\r\n    <ows:Constraint name=\"IsoProfiles\">\r\n      <ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>\r\n
+        \   </ows:Constraint>\r\n    <ows:Constraint name=\"PostEncoding\">\r\n      <ows:Value>SOAP</ows:Value>\r\n
+        \   </ows:Constraint>\r\n  </ows:OperationsMetadata>\r\n  <ogc:Filter_Capabilities>\r\n
+        \   <ogc:Spatial_Capabilities>\r\n      <ogc:GeometryOperands>\r\n        <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>\r\n
+        \       <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>\r\n        <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>\r\n
+        \       <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>\r\n      </ogc:GeometryOperands>\r\n
+        \     <ogc:SpatialOperators>\r\n        <ogc:SpatialOperator name=\"BBOX\"
+        />\r\n        <ogc:SpatialOperator name=\"Equals\" />\r\n        <ogc:SpatialOperator
+        name=\"Overlaps\" />\r\n        <ogc:SpatialOperator name=\"Disjoint\" />\r\n
+        \       <ogc:SpatialOperator name=\"Intersects\" />\r\n        <ogc:SpatialOperator
+        name=\"Touches\" />\r\n        <ogc:SpatialOperator name=\"Crosses\" />\r\n
+        \       <ogc:SpatialOperator name=\"Within\" />\r\n        <ogc:SpatialOperator
+        name=\"Contains\" />\r\n        <!--\n                <ogc:SpatialOperator
+        name=\"Beyond\"/>\n                <ogc:SpatialOperator name=\"DWithin\"/>\n
+        \                The 'SpatialOperator' element can have a GeometryOperands
+        child -->\r\n      </ogc:SpatialOperators>\r\n    </ogc:Spatial_Capabilities>\r\n
+        \   <ogc:Scalar_Capabilities>\r\n      <ogc:LogicalOperators />\r\n      <ogc:ComparisonOperators>\r\n
+        \       <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>\r\n        <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>\r\n        <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>\r\n
+        \       <!-- LessThanOrEqualTo is in OGC Filter Spec, LessThanEqualTo is in
+        OGC CSW schema -->\r\n        <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>LessThanOrEqualTo</ogc:ComparisonOperator>\r\n
+        \       <!-- GreaterThanOrEqualTo is in OGC Filter Spec, GreaterThanEqualTo
+        is in OGC CSW schema -->\r\n        <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>GreaterThanOrEqualTo</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>\r\n        <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>NullCheck</ogc:ComparisonOperator>\r\n        <!--
+        FIXME : Check NullCheck operation is available -->\r\n      </ogc:ComparisonOperators>\r\n
+        \   </ogc:Scalar_Capabilities>\r\n    <ogc:Id_Capabilities>\r\n      <ogc:EID
+        />\r\n      <ogc:FID />\r\n    </ogc:Id_Capabilities>\r\n  </ogc:Filter_Capabilities>\r\n</csw:Capabilities>\r\n\r\n"
+    http_version: 
+  recorded_at: Sun, 27 Jan 2013 19:50:29 GMT
+- request:
+    method: get
+    uri: http://libsvr35.lib.virginia.edu/geonetwork/srv/en/csw?request=GetCapabilities&service=CSW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 27 Jan 2013 20:06:33 GMT
+      Set-Cookie:
+      - JSESSIONID=25D88E2B80F488AAF93B257379E9310C; Path=/geonetwork
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - '-1'
+      Content-Type:
+      - application/xml;charset=UTF-8
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<csw:Capabilities xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"
+        xmlns:gml=\"http://www.opengis.net/gml\" xmlns:gmd=\"http://www.isotc211.org/2005/gmd\"
+        xmlns:ows=\"http://www.opengis.net/ows\" xmlns:ogc=\"http://www.opengis.net/ogc\"
+        xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        version=\"2.0.2\" xsi:schemaLocation=\"http://www.opengis.net/cat/csw/2.0.2
+        http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd\">\r\n  <ows:ServiceIdentification>\r\n
+        \   <ows:Title />\r\n    <ows:Abstract />\r\n    <ows:Keywords>\r\n      <!--
+        Keywords are automatically added by GeoNetwork\n            according to catalogue
+        content. -->\r\n      <ows:Keyword>roads</ows:Keyword>\r\n      <ows:Keyword>Virginia</ows:Keyword>\r\n
+        \     <ows:Keyword>Historic</ows:Keyword>\r\n      <ows:Keyword>McGregor</ows:Keyword>\r\n
+        \     <ows:Keyword>streets</ows:Keyword>\r\n      <ows:Keyword>streams</ows:Keyword>\r\n
+        \     <ows:Keyword>rivers</ows:Keyword>\r\n      <ows:Keyword>North America</ows:Keyword>\r\n
+        \     <ows:Keyword>railroads</ows:Keyword>\r\n      <ows:Keyword>buildings</ows:Keyword>\r\n
+        \     <ows:Type>theme</ows:Type>\r\n    </ows:Keywords>\r\n    <ows:ServiceType>CSW</ows:ServiceType>\r\n
+        \   <ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>\r\n    <ows:Fees
+        />\r\n    <ows:AccessConstraints />\r\n  </ows:ServiceIdentification>\r\n
+        \ <ows:ServiceProvider>\r\n    <ows:ProviderName>GeoNetwork opensource</ows:ProviderName>\r\n
+        \   <ows:ProviderSite xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork\"
+        />\r\n    <ows:ServiceContact>\r\n      <ows:IndividualName />\r\n      <ows:PositionName
+        />\r\n      <ows:ContactInfo>\r\n        <ows:Phone>\r\n          <ows:Voice
+        />\r\n          <ows:Facsimile />\r\n        </ows:Phone>\r\n        <ows:Address>\r\n
+        \         <ows:DeliveryPoint />\r\n          <ows:City />\r\n          <ows:AdministrativeArea
+        />\r\n          <ows:PostalCode />\r\n          <ows:Country />\r\n          <ows:ElectronicMailAddress
+        />\r\n        </ows:Address>\r\n        <ows:HoursOfService />\r\n        <ows:ContactInstructions
+        />\r\n      </ows:ContactInfo>\r\n      <ows:Role />\r\n    </ows:ServiceContact>\r\n
+        \ </ows:ServiceProvider>\r\n  <ows:OperationsMetadata>\r\n    <ows:Operation
+        name=\"GetCapabilities\">\r\n      <ows:DCP>\r\n        <ows:HTTP>\r\n          <ows:Get
+        xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <ows:Parameter name=\"sections\">\r\n
+        \       <ows:Value>ServiceIdentification</ows:Value>\r\n        <ows:Value>ServiceProvider</ows:Value>\r\n
+        \       <ows:Value>OperationsMetadata</ows:Value>\r\n        <ows:Value>Filter_Capabilities</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Constraint name=\"PostEncoding\">\r\n
+        \       <ows:Value>XML</ows:Value>\r\n      </ows:Constraint>\r\n    </ows:Operation>\r\n
+        \   <ows:Operation name=\"DescribeRecord\">\r\n      <ows:DCP>\r\n        <ows:HTTP>\r\n
+        \         <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\">\r\n
+        \           <ows:Constraint name=\"PostEncoding\">\r\n              <ows:Value>XML</ows:Value>\r\n
+        \             <ows:Value>SOAP</ows:Value>\r\n            </ows:Constraint>\r\n
+        \         </ows:Post>\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <ows:Parameter
+        name=\"typeName\">\r\n        <ows:Value>csw:Record</ows:Value>\r\n        <ows:Value>gmd:MD_Metadata</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"outputFormat\">\r\n
+        \       <ows:Value>application/xml</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Parameter name=\"schemaLanguage\">\r\n        <ows:Value>http://www.w3.org/TR/xmlschema-1/</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"typeName\">\r\n        <ows:Value>csw:Record</ows:Value>\r\n
+        \       <ows:Value>gmd:MD_Metadata</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Constraint name=\"PostEncoding\">\r\n        <ows:Value>XML</ows:Value>\r\n
+        \     </ows:Constraint>\r\n    </ows:Operation>\r\n    <ows:Operation name=\"GetDomain\">\r\n
+        \     <ows:DCP>\r\n        <ows:HTTP>\r\n          <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n    </ows:Operation>\r\n
+        \   <ows:Operation name=\"GetRecords\">\r\n      <ows:DCP>\r\n        <ows:HTTP>\r\n
+        \         <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\">\r\n
+        \           <ows:Constraint name=\"PostEncoding\">\r\n              <ows:Value>XML</ows:Value>\r\n
+        \             <ows:Value>SOAP</ows:Value>\r\n            </ows:Constraint>\r\n
+        \         </ows:Post>\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <!--
+        FIXME : Gets it from enum or conf -->\r\n      <ows:Parameter name=\"resultType\">\r\n
+        \       <ows:Value>hits</ows:Value>\r\n        <ows:Value>results</ows:Value>\r\n
+        \       <ows:Value>validate</ows:Value>\r\n      </ows:Parameter>\r\n      <ows:Parameter
+        name=\"outputFormat\">\r\n        <ows:Value>application/xml</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"outputSchema\">\r\n
+        \       <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>\r\n        <ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"typeNames\">\r\n        <ows:Value>csw:Record</ows:Value>\r\n
+        \       <ows:Value>gmd:MD_Metadata</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Parameter name=\"CONSTRAINTLANGUAGE\">\r\n        <ows:Value>FILTER</ows:Value>\r\n
+        \       <ows:Value>CQL_TEXT</ows:Value>\r\n      </ows:Parameter>\r\n      <ows:Constraint
+        name=\"PostEncoding\">\r\n        <ows:Value>XML</ows:Value>\r\n      </ows:Constraint>\r\n
+        \     <ows:Constraint name=\"SupportedISOQueryables\">\r\n        <ows:Value>Operation</ows:Value>\r\n
+        \       <ows:Value>Format</ows:Value>\r\n        <ows:Value>OrganisationName</ows:Value>\r\n
+        \       <ows:Value>Type</ows:Value>\r\n        <ows:Value>ServiceType</ows:Value>\r\n
+        \       <ows:Value>DistanceValue</ows:Value>\r\n        <ows:Value>ResourceLanguage</ows:Value>\r\n
+        \       <ows:Value>RevisionDate</ows:Value>\r\n        <ows:Value>OperatesOn</ows:Value>\r\n
+        \       <ows:Value>GeographicDescriptionCode</ows:Value>\r\n        <ows:Value>AnyText</ows:Value>\r\n
+        \       <ows:Value>Modified</ows:Value>\r\n        <ows:Value>PublicationDate</ows:Value>\r\n
+        \       <ows:Value>ResourceIdentifier</ows:Value>\r\n        <ows:Value>ParentIdentifier</ows:Value>\r\n
+        \       <ows:Value>Identifier</ows:Value>\r\n        <ows:Value>CouplingType</ows:Value>\r\n
+        \       <ows:Value>TopicCategory</ows:Value>\r\n        <ows:Value>OperatesOnIdentifier</ows:Value>\r\n
+        \       <ows:Value>ServiceTypeVersion</ows:Value>\r\n        <ows:Value>TempExtent_end</ows:Value>\r\n
+        \       <ows:Value>Subject</ows:Value>\r\n        <ows:Value>CreationDate</ows:Value>\r\n
+        \       <ows:Value>OperatesOnName</ows:Value>\r\n        <ows:Value>Title</ows:Value>\r\n
+        \       <ows:Value>DistanceUOM</ows:Value>\r\n        <ows:Value>Denominator</ows:Value>\r\n
+        \       <ows:Value>AlternateTitle</ows:Value>\r\n        <ows:Value>Language</ows:Value>\r\n
+        \       <ows:Value>TempExtent_begin</ows:Value>\r\n        <ows:Value>HasSecurityConstraints</ows:Value>\r\n
+        \       <ows:Value>KeywordType</ows:Value>\r\n        <ows:Value>Abstract</ows:Value>\r\n
+        \     </ows:Constraint>\r\n      <ows:Constraint name=\"AdditionalQueryables\">\r\n
+        \       <ows:Value>AccessConstraints</ows:Value>\r\n        <ows:Value>ResponsiblePartyRole</ows:Value>\r\n
+        \       <ows:Value>OnlineResourceMimeType</ows:Value>\r\n        <ows:Value>OnlineResourceType</ows:Value>\r\n
+        \       <ows:Value>Lineage</ows:Value>\r\n        <ows:Value>SpecificationDate</ows:Value>\r\n
+        \       <ows:Value>ConditionApplyingToAccessAndUse</ows:Value>\r\n        <ows:Value>SpecificationDateType</ows:Value>\r\n
+        \       <ows:Value>MetadataPointOfContact</ows:Value>\r\n        <ows:Value>Classification</ows:Value>\r\n
+        \       <ows:Value>OtherConstraints</ows:Value>\r\n        <ows:Value>Degree</ows:Value>\r\n
+        \       <ows:Value>SpecificationTitle</ows:Value>\r\n      </ows:Constraint>\r\n
+        \   </ows:Operation>\r\n    <ows:Operation name=\"GetRecordById\">\r\n      <ows:DCP>\r\n
+        \       <ows:HTTP>\r\n          <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\">\r\n
+        \           <ows:Constraint name=\"PostEncoding\">\r\n              <ows:Value>XML</ows:Value>\r\n
+        \             <ows:Value>SOAP</ows:Value>\r\n            </ows:Constraint>\r\n
+        \         </ows:Post>\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n      <ows:Parameter
+        name=\"outputSchema\">\r\n        <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>\r\n
+        \       <ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>\r\n      </ows:Parameter>\r\n
+        \     <ows:Parameter name=\"outputFormat\">\r\n        <ows:Value>application/xml</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"resultType\">\r\n        <ows:Value>hits</ows:Value>\r\n
+        \       <ows:Value>results</ows:Value>\r\n        <ows:Value>validate</ows:Value>\r\n
+        \     </ows:Parameter>\r\n      <ows:Parameter name=\"ElementSetName\">\r\n
+        \       <ows:Value>brief</ows:Value>\r\n        <ows:Value>summary</ows:Value>\r\n
+        \       <ows:Value>full</ows:Value>\r\n      </ows:Parameter>\r\n      <ows:Constraint
+        name=\"PostEncoding\">\r\n        <ows:Value>XML</ows:Value>\r\n      </ows:Constraint>\r\n
+        \   </ows:Operation>\r\n    <ows:Operation name=\"Transaction\">\r\n      <ows:DCP>\r\n
+        \       <ows:HTTP>\r\n          <ows:Get xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n          <ows:Post xlink:href=\"http://libsvr35.lib.virginia.edu:8080/geonetwork/srv/en/csw\"
+        />\r\n        </ows:HTTP>\r\n      </ows:DCP>\r\n    </ows:Operation>\r\n
+        \   <!--\t\t\n\t\t<ows:Operation name=\"Harvest\">\n\t\t\t<ows:DCP>\n\t\t\t\t<ows:HTTP>\n\t\t\t\t\t<ows:Get
+        \ xlink:href=\"http://$HOST:$PORT$SERVLET/srv/en/csw\" />\n\t\t\t\t\t<ows:Post
+        xlink:href=\"http://$HOST:$PORT$SERVLET/srv/en/csw\"  />\n\t\t\t\t</ows:HTTP>\n\t\t\t</ows:DCP>\n\t\t</ows:Operation>\n-->\r\n
+        \   <ows:Parameter name=\"service\">\r\n      <ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>\r\n
+        \   </ows:Parameter>\r\n    <ows:Parameter name=\"version\">\r\n      <ows:Value>2.0.2</ows:Value>\r\n
+        \   </ows:Parameter>\r\n    <ows:Constraint name=\"IsoProfiles\">\r\n      <ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>\r\n
+        \   </ows:Constraint>\r\n    <ows:Constraint name=\"PostEncoding\">\r\n      <ows:Value>SOAP</ows:Value>\r\n
+        \   </ows:Constraint>\r\n  </ows:OperationsMetadata>\r\n  <ogc:Filter_Capabilities>\r\n
+        \   <ogc:Spatial_Capabilities>\r\n      <ogc:GeometryOperands>\r\n        <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>\r\n
+        \       <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>\r\n        <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>\r\n
+        \       <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>\r\n      </ogc:GeometryOperands>\r\n
+        \     <ogc:SpatialOperators>\r\n        <ogc:SpatialOperator name=\"BBOX\"
+        />\r\n        <ogc:SpatialOperator name=\"Equals\" />\r\n        <ogc:SpatialOperator
+        name=\"Overlaps\" />\r\n        <ogc:SpatialOperator name=\"Disjoint\" />\r\n
+        \       <ogc:SpatialOperator name=\"Intersects\" />\r\n        <ogc:SpatialOperator
+        name=\"Touches\" />\r\n        <ogc:SpatialOperator name=\"Crosses\" />\r\n
+        \       <ogc:SpatialOperator name=\"Within\" />\r\n        <ogc:SpatialOperator
+        name=\"Contains\" />\r\n        <!--\n                <ogc:SpatialOperator
+        name=\"Beyond\"/>\n                <ogc:SpatialOperator name=\"DWithin\"/>\n
+        \                The 'SpatialOperator' element can have a GeometryOperands
+        child -->\r\n      </ogc:SpatialOperators>\r\n    </ogc:Spatial_Capabilities>\r\n
+        \   <ogc:Scalar_Capabilities>\r\n      <ogc:LogicalOperators />\r\n      <ogc:ComparisonOperators>\r\n
+        \       <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>\r\n        <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>\r\n        <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>\r\n
+        \       <!-- LessThanOrEqualTo is in OGC Filter Spec, LessThanEqualTo is in
+        OGC CSW schema -->\r\n        <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>LessThanOrEqualTo</ogc:ComparisonOperator>\r\n
+        \       <!-- GreaterThanOrEqualTo is in OGC Filter Spec, GreaterThanEqualTo
+        is in OGC CSW schema -->\r\n        <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>GreaterThanOrEqualTo</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>\r\n        <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>\r\n
+        \       <ogc:ComparisonOperator>NullCheck</ogc:ComparisonOperator>\r\n        <!--
+        FIXME : Check NullCheck operation is available -->\r\n      </ogc:ComparisonOperators>\r\n
+        \   </ogc:Scalar_Capabilities>\r\n    <ogc:Id_Capabilities>\r\n      <ogc:EID
+        />\r\n      <ogc:FID />\r\n    </ogc:Id_Capabilities>\r\n  </ogc:Filter_Capabilities>\r\n</csw:Capabilities>\r\n\r\n"
+    http_version: 
+  recorded_at: Sun, 27 Jan 2013 20:06:33 GMT
+recorded_with: VCR 2.4.0

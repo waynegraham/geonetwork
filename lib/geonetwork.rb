@@ -1,3 +1,6 @@
+require "httparty"
+
+require "geonetwork/server"
 require "geonetwork/version"
 
 module Geonetwork
